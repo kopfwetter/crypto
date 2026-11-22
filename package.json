@@ -1,0 +1,17 @@
+{
+  "name": "@kopfwetter/crypto",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Spezifikation, Testvektoren und Referenz-Prüfung der Ende-zu-Ende-Verschlüsselung von Kopfwetter",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "check": "node vectors/check.mjs",
+    "check:generate": "python3 vectors/generate.py | diff -u vectors/vectors.json - && echo '✓ vectors.json entspricht generate.py'"
+  },
+  "dependencies": {
+    "@noble/ciphers": "2.4.0",
+    "@noble/hashes": "2.4.0",
+    "hash-wasm": "4.12.0"
+  }
+}

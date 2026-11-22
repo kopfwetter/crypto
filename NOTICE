@@ -1,0 +1,4 @@
+Kopfwetter Crypto
+Copyright 2026 Torsten Albrecht
+
+Verwendet: @noble/hashes und @noble/ciphers (MIT, Paul Miller), hash-wasm (MIT, Dani Biró).
